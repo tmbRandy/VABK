@@ -1,0 +1,16 @@
+[
+{
+  "modid": "VABK",
+  "name": "Vollautomatische Bonzeklinge",
+  "description": "Eine Mod, die den Wechsel zwischen Bonze- bzw. Birthklinge, sowie den Schuss automatisiert. Benutzung ausschließlich in eigener Verantwortung!",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["TMB_Randy"],
+  "credits": "TMB_Randy",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
