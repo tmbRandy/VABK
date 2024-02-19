@@ -17,7 +17,7 @@ import net.minecraftforge.fml.common.gameevent.TickEvent;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.lwjgl.input.Keyboard;
+import tmb.randy.vabk.Gui.TimeoutGui;
 
 import java.lang.reflect.Field;
 
@@ -37,7 +37,7 @@ public class Mod {
 
     private boolean active;
 
-    private TimeoutGui settingsGui = new TimeoutGui();
+    private final TimeoutGui settingsGui = new TimeoutGui();
 
     public static Mod getSharedInstance() {
         return sharedInstance;
@@ -65,7 +65,7 @@ public class Mod {
             if (cooldown >= (killCooldown + bowLoadCooldown)) {
                 cooldown = 0;
                 shoot();
-            } else if (cooldown == bowLoadCooldown) {
+            } else if (cooldown == killCooldown) {
                 startUsingBow();
             }
         }
@@ -82,25 +82,6 @@ public class Mod {
                 e.printStackTrace();
             }
         }
-    }
-
-    @SubscribeEvent
-    public void onKeyInput(GuiScreenEvent.KeyboardInputEvent.Pre event) {
-
-/*
-        if (Keyboard.isKeyDown(Keyboard.KEY_RETURN) && chatInputField != null) {
-            String chatInput = chatInputField.getText();
-            if (chatInput.equalsIgnoreCase("vabk")) {
-                toggleActive();
-                chatInputField.setText("");
-            } else if (chatInput.equalsIgnoreCase("/vabk settings")) {
-                //showSettingsGui();
-                chatInputField.setText("");
-            }
-        }
-
- */
-
     }
 
     @SubscribeEvent

@@ -1,4 +1,4 @@
-package tmb.randy.vabk;
+package tmb.randy.vabk.Gui;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.FontRenderer;

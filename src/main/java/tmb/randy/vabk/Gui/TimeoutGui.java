@@ -1,10 +1,12 @@
-package tmb.randy.vabk;
+package tmb.randy.vabk.Gui;
 
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraftforge.common.config.Configuration;
+import tmb.randy.vabk.Gui.GuiNumericField;
+import tmb.randy.vabk.Mod;
 
 import java.io.File;
 import java.io.IOException;
@@ -65,18 +67,20 @@ public class TimeoutGui extends GuiScreen {
         config = new Configuration(new File(Minecraft.getMinecraft().mcDataDir, "vabk.cfg"));
         config.load();
 
-        int cooldown1 = config.getInt("killCooldown", "settings", 200, 0, Integer.MAX_VALUE, "Kill cooldown");
-        int cooldown2 = config.getInt("loadBowCooldown", "settings", 40, 0, Integer.MAX_VALUE, "Load bow cooldown");
+        int cooldown1 = config.getInt("killCooldown", "settings", 14, 0, Integer.MAX_VALUE, "Kill cooldown");
+        int cooldown2 = config.getInt("loadBowCooldown", "settings", 16, 0, Integer.MAX_VALUE, "Load bow cooldown");
 
         killCooldownField = new GuiNumericField(this.fontRendererObj, COOLDOWN_1, this.width / 2 - 50, this.height / 2 - 30);
         killCooldownField.setMinimum(1);
+        killCooldownField.setMaximum(150);
         killCooldownField.setEnabled(true);
         killCooldownField.isFocused();
-        killCooldownField.setSteps(5);
+        killCooldownField.setSteps(2);
         killCooldownField.setValue(cooldown1);
 
         loadBowCooldownField = new GuiNumericField(this.fontRendererObj, COOLDOWN_2, this.width / 2 - 50, this.height / 2 + 10);
         loadBowCooldownField.setMinimum(1);
+        loadBowCooldownField.setMaximum(110);
         loadBowCooldownField.setEnabled(true);
         loadBowCooldownField.setSteps(2);
         loadBowCooldownField.setValue(cooldown2);
