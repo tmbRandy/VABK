@@ -14,7 +14,7 @@ Diese Mod für Minecraft Forge 1.8.9 bietet euch einen automatischen Wechsel zwi
 Du kannst sowohl den Kill Cooldown (Wartezeit zwischen den Schüssen in Ticks), als auch die Spannzeit für den Bogen in Ticks einstellen (Standard Hotkey Taste K). Niedrigere Werte beim Kill Cooldown erhöhen die Schussrate, können aber bei zu niedrigen Werten dazu führen, dass der Plünderungs Effekt deiner Klinge nicht angewendet wird. Niediger ist besser - zu niedrig ist schlecht. Die Spannzeit für den Bogen beeinflusst die Schussweite. Je höher der Wert, umso weiter fliegt der Pfeil. Niedrigere Werte erhöhen die Schussrate (teilweise MASSIV), erfordern jedoch einen geringeren Abstand zu deiner Beute. Prinzipiell gilt: Je näher du dich an deinen Mob stellen kannst, umso niedriger kannst du die Werte stellen, umso höher ist die Schussrate, umso mehr Loot droppt (sofern genügend Mobs nachspawnen). Die Hotkeys lassen sich in den Steuerungsoptionen von Minecraft in der Kategorie VABK verändern.
 
 ## Installation
-Lade dir die aktuellste Version als .jar Datei herunter und kopiere sie in diesen Ordner:
+Klicke in der rechten Spalte auf dieser Seite auf "Releases", lade dir die aktuellste Version als .jar Datei herunter und kopiere sie in diesen Ordner:
 
 |Betriebssystem         | Ordner                                             |
 |-----------------------|----------------------------------------------------|
